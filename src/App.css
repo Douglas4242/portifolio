@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+
+.theme__dark {
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-dark);
+}
+
+.theme__light {
+    color: var(--color-text-light);
+    background-color: var(--color-bg-light);
+}
