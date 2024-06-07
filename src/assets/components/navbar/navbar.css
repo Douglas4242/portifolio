@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 6rem 4rem 6rem;
+    font-weight: 500;
 }
 
 .pd__navbar-content {
@@ -14,20 +15,30 @@
     border: solid;
 }
 
+.pd__navbar-content:hover {
+    transition-duration: 0.3s;
+    box-shadow: 0px 2px 20px 0px white;
+}
+
+
 .pd__navbar-links-text {
     flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+
 }
+
 
 .pd__navbar-links-icons {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-right: 4rem;
     cursor: pointer;
+    gap: 10px;
 }
 
 .pd__navbar-theme {
@@ -38,14 +49,53 @@
 }
 
 .pd__navbar-links-text p:hover,
-.pd__navbar-theme:hover {
+.pd__navbar-theme:hover,
+.pd__navbar-links-icons a:hover,
+.pd__navbar-menu-links-text p:hover,
+.pd__navbar-menu-links-icons a:hover,
+.pd__navbar-menu-theme:hover {
     transform: scale(1.15);
     transition-duration: 0.5s;
 }
 
-.pd__navbar-links-icons:hover {
-    transform: scale(1.05);
-    transition-duration: 0.6s;
+
+.pd__navbar-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.pd__navbar-menu-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 30px;
+    border: solid;
+    gap: 10px;
+    margin-top: 10px;
+    position: absolute;
+    top: 70px;
+}
+
+.bg-light {
+    background-color: var(--color-bg-light);
+}
+
+.bg-dark {
+    background-color: var(--color-bg-dark);
+}
+
+.pd__navbar-menu-content p {
+    margin-top: 10px;
+}
+
+.pd__navbar-menu-links-text {
+    cursor: pointer;
+}
+
+.pd__navbar-menu-links-icons {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -54,4 +104,31 @@
         justify-content: center;
 
     }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .pd__navbar-links-icons,
+    .pd__navbar-links-text,
+    .pd__navbar-theme {
+        display: none;
+    }
+
+    .pd__navbar-menu {
+        display: flex;
+    }
+
+    .pd__navbar-content {
+        border: none;
+    }
+
+    .pd__navbar-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
 }
