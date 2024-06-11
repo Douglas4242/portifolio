@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <div className={`pd__navbar ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
-            <div className="pd__navbar-content">
+            <div className={`pd__navbar-content ${lightTheme ? '' : 'glow'}`}>
                 <div className="pd__navbar-links-text">
                     <Menu />
                 </div>

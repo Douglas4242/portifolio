@@ -1,0 +1,39 @@
+.pd__introduction h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.pd__introduction h1 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 2rem;
+}
+
+.pd__introduction span {
+    font-weight: 800;
+}
+
+.pd__introduction-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.pd__introduction-text button {
+    width: 200px;
+    padding: 5px;
+    margin-top: 2rem;
+    border-radius: 10px;
+
+}
+
+
+
+.highlight-dark {
+    color: var(--color-text-dark-highlight);
+    text-shadow: 0px 2px 20px;
+}
+
+.highlight-light {
+    color: var(--color-text-light-highlight);
+    text-shadow: 0px 2px 2px black;
+}
