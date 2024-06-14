@@ -3,6 +3,7 @@ import "./App.css"
 import { ThemeProvider } from "./assets/context/ThemeContext"
 import Navbar from "./assets/components/navbar/Navbar"
 import Introduction from "./assets/components/intro/Introduction"
+import Skills from "./assets/components/skills/Skills"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <ThemeProvider>
         <Navbar />
         <Introduction />
+        <Skills />
       </ThemeProvider>
     </div>
   )

@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './introduction.css';
 import { ThemeContext } from '../../context/ThemeContext';
-import Photo from '../../images/foto.jpg';
+import Photo from '../../images/photo.png';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const InfoModal = ({ show, onHide }) => {
     const { lightTheme } = useContext(ThemeContext);
@@ -16,28 +16,16 @@ const InfoModal = ({ show, onHide }) => {
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered>
-            <Modal.Header className={` ${lightTheme ? 'theme__light' : 'theme__dark'}`} closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    <div className={` ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
-                        Sobre
-                    </div>
-                </Modal.Title>
-            </Modal.Header>
             <Modal.Body className={` ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
-                <h4>Centered Modal</h4>
+                <h4><strong> Sobre </strong></h4>
                 <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                    consectetur ac, vestibulum at eros.
+                    Sou um apaixonado por tecnologia e soluções inovadoras. Como desenvolvedor front-end, eu tenho o compromisso de entender as necessidades e desenvolver as melhores soluções com o objetivo de trazer resultados excepcionais para os negócios. Já desenvolvi projetos para otimizar processos administrativos e aumentar a rentabilidade de empreendedores. Estou semppre em busca de novos desafios e oportunidades, para aperfeiçoar e demonstrar todo o meu potencial.
                 </p>
-            </Modal.Body>
-            <Modal.Footer className={` ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
-                {/* <Button  onClick={onHide}>Close</Button> */}
                 <div className={lightTheme ? 'pd__introduction-connect-light' : 'pd__introduction-connect-dark'}>
                     <a
                         onClick={onHide}
                         href='#'
-                        className="text-reset text-decoration-none">
+                        className="text-reset text-decoration-none pd__introduction-content_btn ">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -45,7 +33,8 @@ const InfoModal = ({ show, onHide }) => {
                         <p>Ocultar</p>
                     </a>
                 </div>
-            </Modal.Footer>
+            </Modal.Body>
+
         </Modal >
     );
 };
