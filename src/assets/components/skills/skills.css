@@ -3,13 +3,23 @@
     justify-content: center;
 }
 
-.pd__skills-content-cards {
+.pd__skills-heading {
+    margin-bottom: 2rem;
+}
+
+.pd__skills-heading h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.pd__skills-content-cards-dark,
+.pd__skills-content-cards-light {
     width: max-content;
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
     justify-content: center;
-    /* background: linear-gradient(0deg, rgba(3, 73, 134, 1) 7%, rgba(3, 221, 255, 1) 78%); */
+    min-height: 250px;
 }
 
 
@@ -29,7 +39,42 @@
     }
 }
 
-.pd__skills-content-cards {
+.pd__skills-content_icon-light,
+.pd__skills-content_icon-dark {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.pd__skills-content_icon-dark p,
+.pd__skills-content_icon-light p {
+    display: none;
+    font-size: 18px;
+}
+
+.pd__skills-content_icon-dark:hover p,
+.pd__skills-content_icon-light:hover p {
+    display: flex;
+}
+
+.pd__skills-content_icon-light:hover {
+    transform: scale(1.3);
+    transition-duration: 0.5s;
+    color: var(--color-text-light-highlight);
+}
+
+.pd__skills-content_icon-dark:hover {
+    transform: scale(1.3);
+    transition-duration: 0.5s;
+    color: var(--color-text-dark-highlight);
+}
+
+.pd__skills-content-cards-dark,
+.pd__skills-content-cards-light {
     position: relative;
     padding: 10px 20px;
     border-radius: 5px;
@@ -38,7 +83,8 @@
 }
 
 
-.pd__skills-content-cards span {
+.pd__skills-content-cards-dark span,
+.pd__skills-content-cards-light span {
     position: absolute;
     display: block;
 }
@@ -53,16 +99,16 @@
     text-shadow: 0px 2px 2px black;
 }
 
-.pd__skills-content-cards span:nth-child(1) {
+.pd__skills-content-cards-light span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #03ff3a);
-    animation: btn-anim1 1s linear infinite;
+    background: linear-gradient(90deg, transparent, #0368ff);
+    animation: box-anim1 2s linear infinite;
 }
 
-@keyframes btn-anim1 {
+@keyframes box-anim1 {
     0% {
         left: -100%;
     }
@@ -73,17 +119,17 @@
     }
 }
 
-.pd__skills-content-cards span:nth-child(2) {
+.pd__skills-content-cards-light span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #03ff3a);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: 0.25s;
+    background: linear-gradient(180deg, transparent, #0368ff);
+    animation: box-anim2 2s linear infinite;
+    animation-delay: 0.5s;
 }
 
-@keyframes btn-anim2 {
+@keyframes box-anim2 {
     0% {
         top: -100%;
     }
@@ -94,17 +140,17 @@
     }
 }
 
-.pd__skills-content-cards span:nth-child(3) {
+.pd__skills-content-cards-light span:nth-child(3) {
     bottom: 0;
     right: 100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #03ff3a);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: 0.5s;
+    background: linear-gradient(270deg, transparent, #0368ff);
+    animation: box-anim3 2s linear infinite;
+    animation-delay: 0s;
 }
 
-@keyframes btn-anim3 {
+@keyframes box-anim3 {
     0% {
         right: -100%;
     }
@@ -115,17 +161,17 @@
     }
 }
 
-.pd__skills-content-cards span:nth-child(4) {
+.pd__skills-content-cards-light span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03ff3a);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: 0.75s;
+    background: linear-gradient(360deg, transparent, #0368ff);
+    animation: box-anim4 2s linear infinite;
+    animation-delay: 0.5s;
 }
 
-@keyframes btn-anim4 {
+@keyframes box-anim4 {
     0% {
         bottom: -100%;
     }
@@ -134,4 +180,132 @@
     100% {
         bottom: 100%;
     }
+}
+
+.pd__skills-content-cards-dark span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03ff3a);
+    animation: box-anim1 2s linear infinite;
+}
+
+@keyframes box-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.pd__skills-content-cards-dark span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03ff3a);
+    animation: box-anim2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes box-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.pd__skills-content-cards-dark span:nth-child(3) {
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03ff3a);
+    animation: box-anim3 2s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes box-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.pd__skills-content-cards-dark span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03ff3a);
+    animation: box-anim4 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes box-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@media screen and (max-width:1550px) {
+
+    .pd__skills-content_icon-light,
+    .pd__skills-content_icon-dark {
+        min-height: 150px
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .pd__skills-content-cards-dark,
+    .pd__skills-content-cards-light {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pd__skills-content_icon-dark p,
+    .pd__skills-content_icon-light p {
+        display: flex;
+        font-size: 18px;
+    }
+
+    .pd__skills {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .pd__skills-content-cards-dark,
+    .pd__skills-content-cards-light {
+        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pd__skills-content_icon-light,
+    .pd__skills-content_icon-dark {
+        margin: 0.75rem;
+
+    }
+
 }

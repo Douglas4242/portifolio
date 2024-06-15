@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const Menu = () => (
         <>
-            <p><a href='#'>Sobre</a></p>
+            <p><a href='#tech'>Tecnologias</a></p>
             <p><a href='#'>Projetos</a></p>
             <p><a href='#'>Contato</a></p>
         </>

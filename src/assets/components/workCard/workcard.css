@@ -1,0 +1,42 @@
+.pd__workcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid;
+    width: 400px;
+    height: 600px;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.pd__workcard-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.pd__workcard-image img {
+    width: 300px;
+}
+
+.pd__workcard-title {
+    display: flex;
+    justify-content: center;
+}
+
+.pd__workcard-title h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.pd__workcard-text {
+    display: flex;
+    justify-content: center;
+}
+
+.pd__workcard-text p {
+    max-width: 300px;
+    text-align: center;
+}
