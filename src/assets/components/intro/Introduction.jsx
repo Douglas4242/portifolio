@@ -67,7 +67,7 @@ const Introduction = () => {
     };
 
     return (
-        <div className={`pd__introduction section__padding ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
+        <div id='intro' className={`pd__introduction section__padding ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
             <div className='pd__introduction-heading'>
                 <h4><strong>Bem vindo ao meu Portifólio</strong></h4>
                 <h1>Olá, eu sou <span className={lightTheme ? 'highlight-light' : 'highlight-dark'}>{text}</span></h1>

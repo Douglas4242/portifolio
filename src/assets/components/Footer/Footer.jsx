@@ -25,17 +25,25 @@ const Footer = () => {
                         <li><a href='https://github.com/Douglas4242' target="_blank"><FaGithub size={size + 5} /></a></li>
                     </div>
                 </ul>
-                <div className="pd__footer-left_cv">
-                    <h2>Meu Curriculum</h2>
-                    <div className="pd__footer-left_cv-btns">
+
+
+            </div>
+            <div className="pd__footer-right">
+                <div className="pd__footer-right_cv">
+                    <h1>Meu Curriculum</h1>
+                    <div className="pd__footer-right_cv-btns">
                         <Btndefault text="Download" link="src\assets\files\Curriculo Douglas Gomes Moraes.pdf" download="Douglas Gomes Moraes.pdf" />
                         <Btndefault text="Visualizar" link="src\assets\files\Curriculo Douglas Gomes Moraes.pdf" />
                     </div>
                 </div>
-
-            </div>
-            <div className="pd__footer-right">
-
+                <div className={`pd__footer-right_links ${lightTheme ? 'light' : 'dark'}`}>
+                    <ul>
+                        <a href='#'><li>Home</li></a>
+                        <a href='#intro'><li>Introdução</li></a>
+                        <a href='#tech'><li>Tecnologias</li></a>
+                        <a href='#projects'><li>Meu Trabalho</li></a>
+                    </ul>
+                </div>
             </div>
         </div>
     )
