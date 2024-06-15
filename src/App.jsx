@@ -5,6 +5,7 @@ import Navbar from "./assets/components/navbar/Navbar"
 import Introduction from "./assets/components/intro/Introduction"
 import Skills from "./assets/components/skills/Skills"
 import Projects from "./assets/components/projects/Projects"
+import Footer from "./assets/components/Footer/Footer"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Introduction />
         <Skills />
         <Projects />
+        <Footer />
       </ThemeProvider>
     </div>
   )

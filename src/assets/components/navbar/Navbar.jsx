@@ -11,15 +11,15 @@ const Navbar = () => {
     const Menu = () => (
         <>
             <p><a href='#tech'>Tecnologias</a></p>
-            <p><a href='#'>Projetos</a></p>
-            <p><a href='#'>Contato</a></p>
+            <p><a href='#projects'>Projetos</a></p>
+            <p><a href='#contact'>Contato</a></p>
         </>
     )
 
     const Icons = () => (
         <>
-            <a href='http://www.linkedin.com/in/douglas-moraes-a4190418a'><FaLinkedin size={27} /></a>
-            <a href='https://github.com/Douglas4242'><FaGithub size={27} /></a>
+            <a href='http://www.linkedin.com/in/douglas-moraes-a4190418a' target="_blank"><FaLinkedin size={27} /></a>
+            <a href='https://github.com/Douglas4242' target="_blank"><FaGithub size={27} /></a>
 
         </>
     )

@@ -16,7 +16,7 @@ const Projects = () => {
     const size = 35
 
     return (
-        <div className={`section__padding pd__projects ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
+        <div id='projects' className={`section__padding pd__projects ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
             <div className="pd__projects-heading">
                 <h1>Meu trabalho</h1>
             </div>

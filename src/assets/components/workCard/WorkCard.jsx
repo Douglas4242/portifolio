@@ -12,7 +12,7 @@ const WorkCard = ({ thumbnail, name, text, tech1, tech2, tech3, tech4, tech5, li
     return (
         <div className={`pd__workcard ${lightTheme ? 'light-hover' : 'dark-hover'}`}>
             <div className='pd__workcard-image'>
-                <a href={link}><img src={thumbnail} alt="" /></a>
+                <a href={link} target="_blank"><img src={thumbnail} alt="" /></a>
             </div>
             <div className="pd__workcard-title">
                 <h2>{name}</h2>
