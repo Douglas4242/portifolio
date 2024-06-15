@@ -1,0 +1,34 @@
+.pd__projects-heading {
+    margin-bottom: 2rem;
+}
+
+.pd__projects-heading h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.pd__projects-cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .pd__projects {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+
+    .pd__projects-heading {
+        display: flex;
+        justify-content: center;
+    }
+
+}

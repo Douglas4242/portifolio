@@ -6,19 +6,42 @@
     width: 400px;
     height: 600px;
     padding: 1rem;
-    cursor: pointer;
     border-radius: 20px;
+    transition-duration: 0.2s;
+}
 
+.dark-hover:hover {
+    transform: translateY(-20px) scale(1.02);
+    box-shadow: 0px 0px 20px 2px #fff;
+    transition-duration: 0.5s;
+}
+
+.light-hover:hover {
+    transform: translateY(-20px) scale(1.02);
+    box-shadow: 0px 0px 20px 2px var(--color-text-light-highlight);
+    transition-duration: 0.5s;
 }
 
 .pd__workcard-image {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
+
+.pd__workcard-image:hover {
+    transform: scale(1.25);
+    transition-duration: 0.5s;
+}
+
 
 .pd__workcard-image img {
     width: 300px;
+    height: 180px;
+    border-radius: 10px;
+
 }
 
 .pd__workcard-title {
@@ -39,4 +62,53 @@
 .pd__workcard-text p {
     max-width: 300px;
     text-align: center;
+}
+
+.pd__workcard-tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.pd__workcard-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@media screen and (max-width: 450px) {
+    .pd__workcard {
+        width: 300px;
+        min-height: 600px;
+        height: fit-content;
+    }
+
+    .pd__workcard-image img {
+        width: 200px;
+        height: 120px;
+        border-radius: 10px;
+    }
+
+    .pd__workcard-title h2 {
+        font-size: 18px;
+    }
+
+    .pd__workcard-text {
+        margin-bottom: 1rem;
+    }
+
+
+    .pd__workcard-text p {
+        font-size: 14px;
+    }
+
+    .pd__workcard-btn {
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
