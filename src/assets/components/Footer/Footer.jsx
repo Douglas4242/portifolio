@@ -32,8 +32,8 @@ const Footer = () => {
                 <div className="pd__footer-right_cv">
                     <h1>Meu Curriculum</h1>
                     <div className="pd__footer-right_cv-btns">
-                        <Btndefault text="Download" link="public\files\Curriculo Douglas Gomes Moraes.pdf" download="Douglas Gomes Moraes.pdf" />
-                        <Btndefault text="Visualizar" link="public\files\Curriculo Douglas Gomes Moraes.pdf" />
+                        <Btndefault text="Download" link="public\files\curriculo.pdf" download="curriculo.pdf" />
+                        <Btndefault text="Visualizar" link="public\files\curriculo.pdf" />
                     </div>
                 </div>
                 <div className={`pd__footer-right_links ${lightTheme ? 'light' : 'dark'}`}>
