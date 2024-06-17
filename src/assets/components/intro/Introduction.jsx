@@ -20,7 +20,7 @@ const InfoModal = ({ show, onHide }) => {
             <Modal.Body className={` ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
                 <h4><strong> Sobre </strong></h4>
                 <p>
-                    Sou um apaixonado por tecnologia e soluções inovadoras. Como desenvolvedor front-end, eu tenho o compromisso de entender as necessidades e desenvolver as melhores soluções com o objetivo de trazer resultados excepcionais para os negócios. Já desenvolvi projetos para otimizar processos administrativos e aumentar a rentabilidade de empreendedores. Estou semppre em busca de novos desafios e oportunidades, para aperfeiçoar e demonstrar todo o meu potencial.
+                    Sou um apaixonado por tecnologia e soluções inovadoras. Como desenvolvedor front-end, eu tenho o compromisso de entender as necessidades e desenvolver as melhores soluções com o objetivo de trazer resultados excepcionais para os negócios. Já desenvolvi projetos para otimizar processos administrativos e aumentar a rentabilidade de empreendedores. Estou sempre em busca de novos desafios e oportunidades, para aperfeiçoar e demonstrar todo o meu potencial.
                 </p>
                 <div className="modal-close">
                     <Btndefault click={onHide} text="Ocultar" />
@@ -74,7 +74,7 @@ const Introduction = () => {
             </div>
             <div className="pd__introduction-content">
                 <div className='pd__introduction-content_text'>
-                    <p>Sou um apaixonado por tecnologia e soluções inovadoras. Como desenvolvedor front-end, eu tenho o compromisso de entender as necessidades e desenvolver as melhores soluções com o objetivo de trazer resultados excepcionais para os negócios. Já desenvolvi projetos para otimizar processos administrativos e aumentar a rentabilidade de empreendedores. Estou semppre em busca de novos desafios e oportunidades, para aperfeiçoar e demonstrar todo o meu potencial.</p>
+                    <p>Sou um apaixonado por tecnologia e soluções inovadoras. Como desenvolvedor front-end, eu tenho o compromisso de entender as necessidades e desenvolver as melhores soluções com o objetivo de trazer resultados excepcionais para os negócios. Já desenvolvi projetos para otimizar processos administrativos e aumentar a rentabilidade de empreendedores. Estou sempre em busca de novos desafios e oportunidades, para aperfeiçoar e demonstrar todo o meu potencial.</p>
                 </div>
                 <div className='pd__introduction-content_img'>
                     <img src={Photo} alt="Minha foto" />
