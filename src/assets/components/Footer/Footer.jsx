@@ -21,7 +21,7 @@ const Footer = () => {
                     <li><FaEnvelope size={size} /> douglasgm89@live.com</li>
                     <div className="pd__footer-left_icons">
                         <li><a href='https://contate.me/douglasmoraes' target="_blank"><FaWhatsapp size={size + 5} /></a></li>
-                        <li><a href='https://www.linkedin.com/in/douglas-moraes-a4190418a/' target="_blank"><FaLinkedinIn size={size + 5} /></a></li>
+                        <li><a href='https://www.linkedin.com/in/douglas-moraes4242' target="_blank"><FaLinkedinIn size={size + 5} /></a></li>
                         <li><a href='https://github.com/Douglas4242' target="_blank"><FaGithub size={size + 5} /></a></li>
                     </div>
                 </ul>

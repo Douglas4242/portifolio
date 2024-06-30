@@ -18,10 +18,29 @@ const InfoModal = ({ show, onHide }) => {
             aria-labelledby="contained-modal-title-vcenter"
             centered>
             <Modal.Body className={` ${lightTheme ? 'theme__light' : 'theme__dark'}`}>
-                <h4><strong> Sobre </strong></h4>
+                <h3><strong> Sobre </strong></h3>
                 <p>
-                    Sou um apaixonado por tecnologia e soluções inovadoras. Como desenvolvedor front-end, eu tenho o compromisso de entender as necessidades e desenvolver as melhores soluções com o objetivo de trazer resultados excepcionais para os negócios. Já desenvolvi projetos para otimizar processos administrativos e aumentar a rentabilidade de empreendedores. Estou sempre em busca de novos desafios e oportunidades, para aperfeiçoar e demonstrar todo o meu potencial.
+                    Olá! Sou Douglas Gomes Moraes, um engenheiro mecânico recém-formado em transição para o desenvolvimento frontend. Minha jornada profissional é um testemunho da minha paixão pela tecnologia e da minha capacidade de adaptação.
                 </p>
+                <h3><strong>Minha Trajetória:</strong></h3>
+                <p>
+                    Iniciei minha carreira na engenharia, onde desenvolvi habilidades analíticas valiosas e uma mentalidade orientada para soluções. Durante minha formação, participei de projetos desafiadores como o Mini-Baja SAE, que me ensinou a importância do trabalho em equipe e da inovação.
+                </p>
+                <h3><strong>A Transição para o Desenvolvimento Frontend:</strong></h3>
+                <p>Minha curiosidade pela tecnologia me levou a explorar o mundo do desenvolvimento web. Comecei a estudar HTML, CSS e JavaScript, e rapidamente me apaixonei pela capacidade de criar interfaces interativas e responsivas. Hoje, estou focado em aprimorar minhas habilidades em React.js e outras tecnologias modernas de frontend e expandir para um desenvolvimento Full-Stack</p>
+                <h3><strong>Minhas Habilidades:</strong></h3>
+                <ul>
+                    <li>Desenvolvimento web com HTML5, CSS3 e JavaScript</li>
+                    <li>Criação de interfaces responsivas e mobile-first</li>
+                    <li>Experiência com React.js e bibliotecas de UI como Bootstrap</li>
+                    <li>Conhecimento em controle de versão com Git</li>
+                    <li>Habilidades analíticas e de resolução de problemas da engenharia</li>
+                    <li>Inglês avançado para comunicação eficaz em ambientes globais</li>
+                </ul>
+                <h3><strong>Objetivos Futuros:</strong></h3>
+                <p>Estou empenhado em me tornar um desenvolvedor fullstack experiente, combinando minha formação em engenharia com as mais recentes tecnologias web. Busco oportunidades para contribuir em projetos desafiadores, onde possa aplicar minha criatividade e habilidades técnicas para criar experiências digitais excepcionais.</p>
+                <h3><strong>Valores Pessoais:</strong></h3>
+                <p>Acredito na aprendizagem contínua, na colaboração e na busca pela excelência. Sou proativo, adaptável e sempre pronto para enfrentar novos desafios. Minha experiência em engenharia me ensinou a abordar problemas de forma sistemática, uma habilidade que aplico no desenvolvimento de software.</p>
                 <div className="modal-close">
                     <Btndefault click={onHide} text="Ocultar" />
                 </div>

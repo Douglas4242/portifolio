@@ -18,7 +18,7 @@ const Navbar = () => {
 
     const Icons = () => (
         <>
-            <a href='http://www.linkedin.com/in/douglas-moraes-a4190418a' target="_blank"><FaLinkedin size={27} /></a>
+            <a href='https://www.linkedin.com/in/douglas-moraes4242' target="_blank"><FaLinkedin size={27} /></a>
             <a href='https://github.com/Douglas4242' target="_blank"><FaGithub size={27} /></a>
 
         </>
